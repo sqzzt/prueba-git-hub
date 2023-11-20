@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+</body>
+<script>
+
+document.body.onload = addElement;
+function addElement(){
+    const newDiv = document.createElement('div');
+    const content = document.createTextNode('');
+    newDiv.appendChild(content);
+    const currentDiv = document.querySelector('div');
+    document.body.insertBefore(newDiv, currentDiv);
+}
+
+
+
+    </script>
+</html>

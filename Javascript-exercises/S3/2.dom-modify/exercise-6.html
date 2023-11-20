@@ -1,0 +1,42 @@
+<!-- Basandote en el siguiente array crea una lista ul > li con los textos del array y metelo en el html.
+
+```js
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+``` -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    function addElement() {
+      const newDiv = document.createElement("div");
+      const currentDiv = document.querySelector("div");
+      const createUl = document.createElement("ul");
+
+      newDiv.append(createUl);
+
+      document.body.insertBefore(newDiv, currentDiv);
+    }
+    addElement();
+    // seleccionar UL creado de la function
+    // crear un Li para cada elemento en el array
+    // añadir al array cada elemento
+
+    const apps = ["Facebook", "Netflix", "Instagram", "Snapchat", "Twitter"];
+
+var lastUl = document.querySelector('ul');
+
+apps.forEach(element =>{
+  var addLi = document.createElement('li');
+  addLi.innerHTML = element;
+  lastUl.appendChild(addLi);
+
+})
+
+</script>
+</html>
